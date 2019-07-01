@@ -1,0 +1,45 @@
+<div class="home">
+
+  <nav class="nav"></nav>
+
+  <main>
+    <!-- <section class="img-content">
+      <img class="bgnd" src="../../assets/img/photo-1493770348161-369560ae357d.jpeg" alt="">
+    </section> -->
+
+    <section class="main-content" >
+      <h1 class="heading">Bon Appétit</h1>
+
+      <p class="sub_heading">Can't decide where to eat?</p>
+      <p class="sub_heading">Find a random restaurant near you</p>
+
+      <div id="restaurant">
+        <a href="https://www.google.com/search?q={{rest.name}}{{rest.formatted_address}}" target="_blank">
+          <div *ngIf='show'>
+            <h3 class="rest_name">{{rest.name}}</h3>
+            <p class="rest_rating">{{rest.rating}} stars</p>
+            <!-- <a href="https://maps.google.com/?ll={{rest.geometry.location.lat}},{rest.geomatry.location.lng}}"> -->
+            <p>{{rest.formatted_address}}</p>
+            <!-- </a> -->
+            <p>{{priceRange}}</p>
+          </div>
+        </a>
+      </div>
+
+
+      <section id="input_section">
+
+        <button id="button" (click)='filterRestaurants()'>Find a restaurant!</button>
+        <input [(ngModel)]='input' id="input" type="text" placeholder='Optional Criteria eg. Indian, wings.' />
+
+      </section>
+
+
+
+    </section>
+
+  </main>
+  <footer class="white">
+    <small></small>
+  </footer>
+</div>

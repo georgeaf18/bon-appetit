@@ -1,0 +1,141 @@
+
+
+.home {
+    background: url(../../assets/img/photo-1493770348161-369560ae357d.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+
+.main-content {
+    width: 100%;
+    background: white;
+    height: 100vh;
+}
+
+#input {
+  width: 350px;
+  margin: 0 auto;
+  display: block;
+  width: 350px;
+  height: 40px;
+  border-radius: 20px;
+  padding: 0 10px;
+  border: black solid 2px;
+
+}
+
+#button,
+#button:active,
+#button:focus {
+  border: #030303 solid 2px;
+  border-radius: 20px;
+  background-color: rgb(64, 207, 148);
+  width: 350px;
+  height: 40px;
+  color: black;
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
+  outline: none;
+}
+
+#button:hover {
+  background-color: #030303;
+  color: white;
+}
+
+#restaurant {
+  width: 300px;
+  min-height: 200px;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: rgb(247, 245, 245);
+  text-align: center;
+}
+
+#input_section {
+  /* position: absolute;
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%); */
+  padding-bottom: 30px;
+}
+
+.heading {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.sub_heading {
+  padding: 0;
+  text-align: center;
+}
+
+.rest_name {
+  display: inline-block;
+  font-weight: 900;
+}
+
+.rest_rating {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+footer {
+  height: 50px;
+  background: #030303;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+nav {
+  height: 5vh;
+  background: #030303;
+
+
+}
+
+a,
+a:active {
+  color: black;
+}
+
+
+@media only screen and (min-width: 768px) {
+    /* .main {
+        position: relative;
+    } */
+    .main-content {
+        width: 400px;
+        background: white;
+        position: fixed;
+        top: 5px;
+        right: 0;
+        margin-top: 30px;
+    }
+
+    .bgnd {
+        display: block;
+        width: 100%;
+    }
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    .main-content {
+        width: 500px;
+        
+    }
+
+    
+}
