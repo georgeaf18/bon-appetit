@@ -1,4 +1,4 @@
 export const environment = {
     production : true,
-    api : ''
+    api : 'https://georgeaf-api.herokuapp.com'
 }
