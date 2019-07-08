@@ -69,7 +69,7 @@ export class HomeComponent implements OnInit {
     
       console.log(this.lat)
 
-      this.api.getRestaurants(this.input, this.lat, this.long).subscribe((data:ApiData) => {
+      this.api.getRestaurants(this.input || '%20', this.lat, this.long).subscribe((data:ApiData) => {
         this.restaurants = data.results;
         console.log(data)
         console.log("TCL: HomeComponent -> filterRestaurants -> this.restaurants", this.restaurants)
